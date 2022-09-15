@@ -1,4 +1,8 @@
 
+CODETYPE=code_example
+TESTNAME=ex02_counter
+
+#---------------------------------------------------
 LOC=  /opt/systemc-2.3.3
 INCLS= -I $(LOC)/bin/include
 LIBS=  -L $(LOC)/bin/lib-linux64
@@ -9,8 +13,7 @@ CFLAGS= -g -Wall -Wextra -std=c++11 -Wno-write-strings
 LSC= -lsystemc
 EFILE=./simc
 OBJS=sc_main.o
-CODETYPE=code_example
-TESTNAME=ex02_counter
+
 
 all:clean trans $(EFILE)
 	export LD_LIBRARY_PATH
